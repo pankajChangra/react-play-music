@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { Box, Input, Typography } from '@mui/material';
 import { useDropzone } from 'react-dropzone';
-import beatGif from "../styles/Images/beatGif.gif";
+// import beatGif from "../styles/Images/beatGif.gif";
+
+const numbers: number[] = [0,1,2,3];
 
 const Audioupload = () => {
     const [getAudio, setAudio] = React.useState(null);
@@ -31,7 +33,14 @@ const Audioupload = () => {
                                 <source src={URL.createObjectURL(getAudio)} type="audio/mpeg" /> 
                                 Your browser does not support the audio element.
                             </audio>
-                            <img className="beat-gif" src={beatGif} alt="music gif" />
+                            {/* <img className="beat-gif" src={beatGif} alt="music gif" /> */}
+                            <div className="beat-lines" >
+                                <div className="beat-loader beat-outer-card">
+                                    {numbers.map((num) => (
+                                        <div key={num} className="beat-inner-card" style={{ "--i": num } as React.CSSProperties}></div>
+                                    ))}
+                                </div>
+                            </div>
                         </React.Fragment>
                     )}
                 </Box>        
