@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import { Card, Grid, Paper } from '@mui/material';
 import { deepOrange } from '@mui/material/colors';
 import {dateWithMonthName} from "../utils/dateUtils";
-import Audioupload from './Audioupload';
+import Audioupload from './AudioUploadAndPlay';
 
 const Main = () => {
   const today = dateWithMonthName();
