@@ -29,7 +29,7 @@ const Audioupload = () => {
                     </Typography>
                     {getAudio && (
                         <React.Fragment>
-                            <audio controls>
+                            <audio controls autoPlay>
                                 <source src={URL.createObjectURL(getAudio)} type="audio/mpeg" /> 
                                 Your browser does not support the audio element.
                             </audio>
