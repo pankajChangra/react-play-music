@@ -2,7 +2,7 @@
 
 Upload and play music files using react typescript and material ui
 
-# tl;dr for developers
+# Installation steps
 
 - `yarn` or `yarn install` or 0`yarn install --ignore-scripts` (when you do with ignore you may need to run `npm rebuild` manually)
 - `yarn run start`
@@ -19,7 +19,7 @@ Requirements
 ```
 yarn
 ```
-# Available Scripts
+# Available scripts
 In the project directory, you can run:
 
 ### `yarn start`
